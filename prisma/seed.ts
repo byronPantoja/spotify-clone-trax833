@@ -31,12 +31,13 @@ const run = async () => {
     create: {
       email: 'user@test.com',
       password: bcrypt.hashSync('password', salt),
-      firstName: 'Scott',
-      lastName: 'Moss',
+      firstName: 'Developer',
+      lastName: '833',
     },
   })
 
   const songs = await prisma.song.findMany({})
+  // using Promise.all allow for a nested create
   await Promise.all(
     new Array(10).fill(1).map(async (_, i) => {
       return prisma.playlist.create({
