@@ -1,4 +1,4 @@
-# NextJS / TypeScript / ChakraUI
+# NextJS / TypeScript / ChakraUI / Prisma / Heroku
 
 A Spotify clone project taught by Scott Moss - Frontend Masters
 
